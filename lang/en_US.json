@@ -21,5 +21,13 @@
     "error_password_empty": "Error: Password cannot be empty!",
     "exit_message": "Thanks for using, goodbye!",
     "error_invalid_choice": "Invalid input. Please enter a number between 1 and 4.",
-    "prompt_continue": "\nPress Enter to continue..."
+    "prompt_continue": "\nPress Enter to continue...",
+    "auto_detected_games": "Auto-detected games:",
+    "manual_input": "Manual input",
+    "select_game_prompt": "Please select a game (0 for manual input): ",
+    "invalid_choice": "Invalid choice. Please try again.",
+    "manual_path_input": "Manual path input:",
+    "or": "or",
+    "game_detected": "Game detected: ",
+    "current_game": "Current game: "
 }

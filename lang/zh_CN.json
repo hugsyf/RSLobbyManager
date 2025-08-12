@@ -21,5 +21,13 @@
     "error_password_empty": "错误：密码不能为空！",
     "exit_message": "感谢使用，再见！",
     "error_invalid_choice": "无效的输入，请输入 1 到 4 之间的数字。",
-    "prompt_continue": "\n按回车键继续..."
+    "prompt_continue": "\n按回车键继续...",
+    "auto_detected_games": "自动检测到的游戏：",
+    "manual_input": "手动输入",
+    "select_game_prompt": "请选择游戏 (输入0手动输入): ",
+    "invalid_choice": "无效选择，请重试。",
+    "manual_path_input": "手动路径输入：",
+    "or": "或",
+    "game_detected": "检测到游戏：",
+    "current_game": "当前游戏："
 }
