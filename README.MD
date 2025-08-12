@@ -4,7 +4,7 @@
 
 ## R星游戏战局管理器 (RS Lobby Manager) <a name="rs-lobby-manager"></a>
 
-这是一个简单的 Python 命令行工具，旨在帮助 PC 版《荒野大镖客：救赎2》在线模式（RDOL）的玩家轻松进入单人战局或与朋友的私密战局，从而避开公共战局中泛滥的外挂，获得更纯粹的游戏体验。
+这是一个简单的 Python 命令行工具，旨在帮助 PC 版《荒野大镖客：救赎2》和《侠盗猎车手V》（GTAV）在线模式的玩家轻松进入单人战局或与朋友的私密战局，从而避开公共战局中泛滥的外挂，获得更纯粹的游戏体验。
 
 ### 目录
 
@@ -24,7 +24,7 @@
 
 ### 工作原理
 
-本工具的原理是在 RDR2 的游戏数据目录 (`RedDeadRedemption2\x64\data`) 中创建一个名为 `startup.meta` 的特殊文件。R星 服务器在进行匹配时，会校验这个文件的内容。
+本工具的原理是在相应的游戏数据目录 (例如：`RedDeadRedemption2\x64\data`) 中创建一个名为 `startup.meta` 的特殊文件。R星服务器在进行匹配时，会校验这个文件的内容。
 
 - 当你使用一个**独一无二**的内容（由随机密码生成）时，服务器找不到其他拥有相同文件的玩家，因此会将你分配到一个独立的战局中。
 - 当你和你的朋友使用**完全相同**的内容（由你们约定的密码生成）时，服务器会将你们匹配到同一个战局中。
@@ -39,6 +39,10 @@
 - **恢复普通战局**：通过重命名 `startup.meta` 文件来安全地禁用此功能，让你随时能回到热闹（或混乱）的公共战局。
 - **简单易用**：纯命令行交互，根据提示选择即可，无需手动编辑任何文件。
 
+### 支持的游戏
+
+- 《荒野大镖客：救赎2》（以及Online）
+- 《GTAV 传承版》
 ### 如何使用
 
 #### 1. 环境要求
@@ -61,8 +65,8 @@ git clone https://github.com/hugsyf/RSLobbyManager.git
 
 本项目仍处于早期阶段，未来的（也许会做）改进计划：
 
-- [ ] **路径自动检测**：尝试通过读取 Windows 注册表等方式，自动查找 RDR2 的安装位置。
-- [ ] **扩展支持其他R星游戏**：GTA5 (传承版以及扩展和增强版)
+- [◐] **路径自动检测**：尝试通过读取 Windows 注册表等方式，自动查找 RDR2 的安装位置。
+- [◐] **扩展支持其他R星游戏**：GTA5 (传承版以及扩展和增强版)
 - [ ] **GUI**：图形界面
 
 ### 许可证
@@ -79,7 +83,7 @@ git clone https://github.com/hugsyf/RSLobbyManager.git
 
 ## RS Lobby Manager (English) <a name="rs-lobby-manager-english"></a>
 
-This is a simple Python command-line tool designed to help PC players of Red Dead Online (RDOL) easily get into solo or private, friend-only sessions. This allows for a purer gaming experience by avoiding the prevalence of cheaters in public lobbies.
+This is a simple Python command-line tool designed to help PC players of Red Dead Online (RDO) and GTAOL easily get into solo or private, friend-only sessions. This allows for a purer gaming experience by avoiding the prevalence of cheaters in public lobbies.
 
 ### Table of Contents
 
@@ -99,7 +103,7 @@ This tool currently features a command-line interface (CLI).
 
 ### How It Works
 
-The tool works by creating a special file named `startup.meta` in the RDR2 game data directory (`RedDeadRedemption2\x64\data`). When matchmaking, the Rockstar Games server checks the content of this file.
+The tool works by creating a special file named `startup.meta` in the game data directory (Example: `RedDeadRedemption2\x64\data`). When matchmaking, the Rockstar Games server checks the content of this file.
 
 - When you use **unique** content (generated via a random password), the server cannot find any other players with an identical file, so it places you in a solo session.
 - When you and your friends use **identical** content (from a password you agree upon), the server matches you all into the same session.
@@ -113,6 +117,11 @@ This method has been effective and is considered safe since the game's launch on
 - **Create Private Password Session**: Allows you to enter a custom password, making it easy to connect with friends who use the same password.
 - **Restore Normal Lobbies**: Safely disables the feature by renaming the `startup.meta` file, allowing you to return to lively (or chaotic) public lobbies at any time.
 - **Simple and Easy to Use**: Purely command-line based; just follow the prompts to make your selection without needing to manually edit any files.
+
+### Supported Games
+
+- Red Dead Redemption 2 (& Online)
+- Grand Theft Auto V Legacy
 
 ### How to Use
 
@@ -136,8 +145,8 @@ Click `Code` -> `Download ZIP` on the main GitHub repository page, then extract 
 
 This project is still in its early stages. Potential future improvements include:
 
-- [ ] **Automatic Path Detection**: Attempting to automatically find the RDR2 installation location by reading the Windows Registry or other methods.
-- [ ] **Extend Support to Other Rockstar Games**: Grand Theft Auto V (Legacy, Extended & Enhanced versions).
+- [◐] **Automatic Path Detection**: Attempting to automatically find the RDR2 installation location by reading the Windows Registry or other methods.
+- [◐] **Extend Support to Other Rockstar Games**: Grand Theft Auto V (Legacy, Extended & Enhanced versions).
 - [ ] **GUI**: A graphical user interface.
 
 ### License
