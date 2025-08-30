@@ -46,7 +46,7 @@
 ### 如何使用
 
 #### 1. 环境要求
-- 已安装 [Python 3](https://www.python.org/downloads/)。需要将 Python 添加到路径（`Add Python to PATH`）
+- 已安装 [Python 3.12+](https://www.python.org/downloads/)。需要将 Python 添加到路径（`Add Python to PATH`）
 
 #### 2. 获取项目
 **A：使用 Git**
@@ -126,7 +126,7 @@ This method has been effective and is considered safe since the game's launch on
 ### How to Use
 
 #### 1. Prerequisites
-- [Python 3](https://www.python.org/downloads/) must be installed. Ensure you select `Add Python to PATH` during installation.
+- [Python 3.12+](https://www.python.org/downloads/) must be installed. Ensure you select `Add Python to PATH` during installation.
 
 #### 2. Getting the Project
 **A: Using Git**
